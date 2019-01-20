@@ -1,0 +1,110 @@
+.modal-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.modal-container {
+  position: fixed;
+  z-index: 1050;
+  padding-top: 100px;
+  margin: auto;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  left: 30%;
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 5px;
+  margin: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  color: #9b9b9b;
+  top: 2%;
+  right: 2%;
+  font-size: 20px;
+}
+
+.modal-header {
+  padding: 12px 10px;
+  border-bottom: 1px solid #dadada;
+}
+
+.modal-body {
+  padding: 12px 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #dadada;
+}
+
+.sessionTimer {
+  border-radius: 5px;
+}
+
+.modal-footer {
+  padding: 20px 10px;
+}
+.modal-footer .modal-buttons {
+  text-align: right;
+}
+.modal-footer .modal-buttons button + button {
+  margin-left: 12px;
+}
+
+.modal-button-ok {
+  background: #18a0b3;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.modal-button-cancel {
+  background: #ffffff;
+  cursor: pointer;
+  color: #4a4a4a;
+  border: 1px solid #18a0b3;
+  padding: 10px 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 400;
+}

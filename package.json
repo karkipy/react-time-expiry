@@ -1,0 +1,33 @@
+{
+  "name": "react-time-expiry",
+  "version": "0.3.0",
+  "description": "react module for warning as session is about to end",
+  "repository": "git@github.com:karkipy/react-time-expiry.git",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": ">=16.3.0"
+  },
+  "dependencies": {
+    "react": ">=16.3.0",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Aashish Karki",
+    "email": "aashish.y2z@gmail.com"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1"
+  }
+}
